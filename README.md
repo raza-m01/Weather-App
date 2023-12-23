@@ -6,9 +6,7 @@
 
 This Weather App allows users to retrieve real-time weather information for a given location. Users can either grant location access to get their local weather or search for weather information by entering a city name. The app provides details such as wind speed, humidity, temperature, and cloudiness.
 
-## Live Demo
 
-Check out the live demo [here](https://starlit-sunburst-fec1cf.netlify.app/).
 
 ## Features
 
