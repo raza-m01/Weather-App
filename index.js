@@ -119,7 +119,7 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
     else {
-        //HW - show an alert for no gelolocation support available
+        
     }
 }
 
@@ -160,11 +160,16 @@ async function fetchSearchWeatherInfo(city) {
             `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
           );
         const data = await response.json();
+        if (data.cod === "404") {
+            throw new Error(data.message); // throw an error to be caught in the catch block
+        }
         loadingScreen.classList.remove("active");
         userInfoContainer.classList.add("active");
         renderWeatherInfo(data);
     }
     catch(err) {
-        //hW
+         loadingScreen.classList.remove("active");
+        userInfoContainer.classList.remove("active");
+        cityNotFoundContainer.classList.add("active");
     }
 }
