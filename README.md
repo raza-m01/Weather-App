@@ -8,7 +8,7 @@ This Weather App allows users to retrieve real-time weather information for a gi
 
 ## Live Demo
 
-Check out the live demo [here](https://starlit-sunburst-fec1cf.netlify.app/).
+Check out the live demo [here](https://merry-salamander-5a104e.netlify.app).
 
 ## Features
 
